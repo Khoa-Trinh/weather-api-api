@@ -19,7 +19,7 @@ This project demonstrates:
 * **Configurable TTL** — Cache duration set via `.env`
 * **Rate limiting** — Defaults to `60 requests/min/IP`
 * **Environment variables** — Keeps secrets out of code
-* **Health check** — `/healthz` endpoint
+* **Health check** — `/health` endpoint
 * **Unit tests** — For cache, config, client, and handlers
 
 ---
@@ -37,7 +37,6 @@ This project demonstrates:
 │   └── weather/         # Visual Crossing API client
 ├── .env.example         # Sample environment variables
 ├── docker-compose.yml   # Redis container setup
-├── Makefile             # Common dev commands
 └── README.md
 ```
 
@@ -176,6 +175,8 @@ MIT License © 2025 Khoa Trinh -- see [LICENSE](LICENSE) for details.
 
 ## 🔗 Links
 
-* Visual Crossing: [https://www.visualcrossing.com/](https://www.visualcrossing.com/)
-* Go Chi: [https://github.com/go-chi/chi](https://github.com/go-chi/chi)
-* Redis Go client: [https://github.com/redis/go-redis](https://github.com/redis/go-redis)
+* Visual Crossing: https://www.visualcrossing.com/
+* Go Chi: https://github.com/go-chi/chi
+* Redis Go client: https://github.com/redis/go-redis
+* Roadmap Project: https://roadmap.sh/projects/weather-api-wrapper-service
+* Related Roadmap Guide: https://roadmap.sh/projects/weather-api-wrapper-service
