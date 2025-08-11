@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: redis_container
+    command: ["redis-server", "--requirepass", "butterflyknifeissogood", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+volumes:
+  redisdata: {}
